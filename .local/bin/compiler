@@ -32,7 +32,7 @@ case "$file" in
 	*config.h) sudo make install ;;
         *\.c) cc "$file" -o "$base" && "$base" ;;
 	*\.py) python "$file" ;;
-	*.java) java "$file" ;;
+	*\.java) java "$file" ;;
 	*\.m) octave "$file" ;;
 	*\.scad) openscad -o "$base".stl "$file" ;;
 	*\.go) go run "$file" ;;
